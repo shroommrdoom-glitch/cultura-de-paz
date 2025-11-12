@@ -1,0 +1,409 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Secciones */
+main {
+    padding: 40px 20px;
+}
+
+section {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #667eea;
+    font-size: 2em;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+
+/* Problema Identificado */
+.content-box {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.content-box strong {
+    color: #764ba2;
+}
+
+/* Cartel Digital */
+.poster-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.digital-poster {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.poster-header h3 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.poster-content {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.poster-main {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.poster-list {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.poster-list li {
+    padding: 12px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+.poster-cta {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 25px 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.poster-help {
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.poster-footer {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.poster-footer p {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Señales de Alerta */
+.alert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.alert-card {
+    background: #fff3cd;
+    border-left: 5px solid #ffc107;
+    padding: 25px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.alert-card h3 {
+    color: #d63384;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.alert-card p {
+    color: #333;
+    font-size: 1em;
+}
+
+/* Acciones de Autocuidado */
+.selfcare-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.selfcare-card {
+    background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.selfcare-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.selfcare-card .icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.selfcare-card h3 {
+    color: #155724;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.selfcare-card p {
+    color: #1e4620;
+    font-size: 1em;
+}
+
+/* Ruta de Apoyo */
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.support-card {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #667eea;
+}
+
+.support-card h3 {
+    color: #0056b3;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.support-card p {
+    margin-bottom: 10px;
+    color: #004085;
+}
+
+.contact-info {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #0056b3;
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+}
+
+.emergency-box {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.emergency-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.emergency-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Fuentes */
+.sources-list {
+    margin-top: 30px;
+}
+
+.source-item {
+    background: #e7f3ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #0056b3;
+}
+
+.source-item h4 {
+    color: #0056b3;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.source-item p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.source-item a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.source-item a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Mensaje Final */
+.message-box {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    border: 3px solid #ff8c42;
+}
+
+.message-box h2 {
+    color: #d63384;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.message-box p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.message-box strong {
+    color: #d63384;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .poster-header h3 {
+        font-size: 1.6em;
+    }
+
+    .poster-cta {
+        font-size: 1.2em;
+    }
+
+    .alert-grid,
+    .selfcare-grid,
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .emergency-number {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .digital-poster {
+        padding: 25px;
+    }
+}
